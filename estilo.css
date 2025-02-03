@@ -1,0 +1,90 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(206, 220, 229);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    text-align: center;
+}
+
+header div{ /*para centralizar buttons da header*/
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+button { 
+    margin: 20px;
+    padding: 10px 50px;
+    color: rgb(10, 63, 141);
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(206, 220, 229);
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+main {
+    width: fit-content;
+    color: rgb(10, 63, 141);
+    padding: 10px 60px;
+    border-radius: 25px;
+    background-color: rgb(245, 246, 249);
+    /*para centralizar o main*/
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+/*TABULEIRO*/
+.tabuleiro {
+    width: 400px;
+    margin: 0 auto;
+}
+
+.bloco {
+    width: 33%;
+    height: 120px;
+    font-size: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.linha {
+    display: flex;  
+}
+
+.linha-meio {
+    border-top: 5px solid rgb(10, 63, 141);
+    border-bottom: 5px solid rgb(10, 63, 141);
+} 
+
+.laterais {
+    border-right: 5px solid rgb(10, 63, 141);
+    border-left: 5px solid rgb(10, 63, 141);
+} 
+
+/*FOOTER*/
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+#re-iniciar{
+    color: rgb(10, 63, 141);
+    font-size: 18px;
+    background-color: rgb(206, 220, 229);
+    margin: 25px auto;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 3px;
+}
+

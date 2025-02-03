@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Jogo da Velha</h1>
+            <div>
+                <button id="bX">X</button>
+                <button id="bO">O</button>
+            </div>
+        </header>
+
+        <div class="tabuleiro">
+            <div class="linha">
+                <div id="a1" class="bloco" onclick="jogada('a1')"></div>
+                <div id="a2" class="bloco laterais" onclick="jogada('a2')"></div>
+                <div id="a3" class="bloco" onclick="jogada('a3')"></div>
+            </div>
+
+            <div class="linha linha-meio">
+                <div id="b1" class="bloco" onclick="jogada('b1')"></div>
+                <div id="b2" class="bloco laterais" onclick="jogada('b2')"></div>
+                <div id="b3" class="bloco" onclick="jogada('b3')"></div>
+            </div>
+
+            <div class="linha">
+                <div id="c1" class="bloco" onclick="jogada('c1')"></div>
+                <div id="c2" class="bloco laterais" onclick="jogada('c2')"></div>
+                <div id="c3" class="bloco" onclick="jogada('c3')"></div>
+            </div>
+        </div>
+
+        <footer>
+            <input type="button" value="INICIAR" id='re-iniciar' onclick="botaoInicia()">
+        </footer>
+        
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
